@@ -7,7 +7,6 @@ const MovingHomepage = () => {
   return (
     <>
       <Homepage/>
-      <Footer/>
     </>
   );
 };

@@ -1,6 +1,7 @@
 import { css } from "styled-components";
 
 const styles = css`
+  min-height: calc(100vh - 10vh);
   .intro {
     display: flex;
     flex-direction: column;

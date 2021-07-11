@@ -10,7 +10,6 @@ const ContactUs = ({ location, test }) => {
   return (
     <>
       <Contact location={location} test={test} />
-      <Footer/>
     </>
   );
 };

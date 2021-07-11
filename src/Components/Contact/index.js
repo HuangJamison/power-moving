@@ -4,6 +4,7 @@ import styles from "./styles";
 import { Button, Form } from 'react-bootstrap';
 
 const Contact = ({ className, location, test }) => {
+  const lineWording = test == 1 ? '歡迎填寫以下問券，加入力大 Line，給你最即時的服務！' : '歡迎加入力大 Line，給你最即時的服務！！！'
   console.log('test comp:', test)
   console.log('test location:', location)
   return (
@@ -14,9 +15,10 @@ const Contact = ({ className, location, test }) => {
           力大搬家以顧客滿意為最大宗旨，估價、派車、派工給您最安心的服務，省去比價的困擾，選擇力大，最公道價。
         </span>
         <span className="intro-text">
-          歡迎填寫以下問券，加入力大 Line，給你最即時的服務！！！!
+          {lineWording}
         </span>
       </div>
+      
       <Form id="line-form">
         <Form.Group className="mb-3" controlId="formFirstName">
           <Form.Label>貴姓 / 稱呼：</Form.Label>
