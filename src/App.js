@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 // components
 // import Homepage from './Components/Homepage';
@@ -13,13 +13,15 @@ function App(props) {
       <div id="page-wrapper">
         <MovingNavbar location={props.location}/>
         <Switch>
-
-          <Route exact path="/power-moving">
+          <Route exact path="/">
             <MovingHomepage/>
           </Route>
           <Route path="/power-moving/contact-us">
-            <ContactUs/>
+            <ContactUs location={props} test={'aoo'} />
           </Route>
+
+
+
         </Switch>
       </div>
     </Router>
