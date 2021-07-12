@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
 // components
 import MovingHomepage from './pages/Homepage';
@@ -9,21 +9,22 @@ import ContactUs from './pages/ContactUs';
 
 function App(props) {
   return (
-    <BrowserRouter>
+    <Router>
       <div id="page-wrapper">
         <MovingNavbar location={props.location}/>
         <Switch>
-          {/* <Route exact path="/"> */}
-          <Route exact path="/power-moving">
+
+          <Route exact path="/">
             <MovingHomepage/>
           </Route>
-          <Route path="/power-moving/contact-us">
+          <Route exact path="/power-moving/contact-us">
             <ContactUs location={props} test={0} />
           </Route>
+
         </Switch>
         <Footer />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
