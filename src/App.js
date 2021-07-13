@@ -18,7 +18,7 @@ function App(props) {
             <MovingHomepage/>
           </Route>
           <Route exact path="/power-moving/contact-us">
-            <ContactUs location={props} test={0} />
+            <ContactUs location={props} isExistForm={0} />
           </Route>
 
         </Switch>

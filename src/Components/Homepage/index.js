@@ -10,9 +10,9 @@ const Homepage = ({ className }) => {
           <div className="slogan">
             找信賴的搬家公司 － 選擇力大，給你最公道價
           </div>
-          <div className="origin">
+          {/* <div className="origin">
             photo from HiveBoxx on Unplash
-          </div>
+          </div> */}
         </div>
     </div>
   );

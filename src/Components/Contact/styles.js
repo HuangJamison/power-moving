@@ -14,14 +14,26 @@ const styles = css`
   }
   .intro #title {
     text-align: center;
-    font-size: 5vw;
+    font-size: 3vw;
     padding: 1vh 0;
     line-height: 15vh;
   }
-  #line-form {
-    margin: 5vh;
-    padding: 0 8vw;
-    font-size: 1.5vw;
+  .qr-area {
+    text-align: center;
+  }
+  .qr-area > img {
+    display: inline-block;
+  }
+  .qr-area > span {
+    display: block;
+  }
+  .add-line-btn {
+    max-width: 35vw;
+    min-height: 10vh;
+    font-size: 2vw;
+    line-height: 7vw;
+    margin: 3vh auto;
+    border-radius: 8px;
   }
 `;
 

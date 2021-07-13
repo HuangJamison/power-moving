@@ -20,7 +20,7 @@ const Footer = ({ className }) => {
           </div>
           <div className="copywright">
               Copyright © 2021 力大搬家公司 All Rights Reserved. Jamie.Huang 版權所有
-            </div>
+          </div>
         </div>
     </div>
   );

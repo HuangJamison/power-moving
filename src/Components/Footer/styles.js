@@ -3,7 +3,7 @@ import { css } from "styled-components";
 const styles = css`
   .wrapper-footer {
     position: sticky;
-    height: 10vh;
+    height: 20vh;
     bottom: 0;
     width: 100%;
     background-color: #212529;

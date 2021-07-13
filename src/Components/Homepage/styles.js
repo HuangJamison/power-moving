@@ -2,6 +2,7 @@ import { css } from "styled-components";
 import home_bg_desktop from '../../assets/images/home_bg_desktop.jpeg';
 
 const styles = css`
+  // 根據 Media 去換大小圖片
   .home-bg {
     background-image: url(${home_bg_desktop});
     background-size: cover;
@@ -30,7 +31,6 @@ const styles = css`
     bottom: -10%;
     left: 86%;
     background-color: rgba(0, 0 ,0, 0.1);
-    /* transform: translate(-50%, -50%); */
     margin: 0;
     font-size: 0.8vw;
   }
