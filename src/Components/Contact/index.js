@@ -5,8 +5,6 @@ import { Button, Form } from 'react-bootstrap';
 
 const Contact = ({ className, location, test }) => {
   const lineWording = test == 1 ? '歡迎填寫以下問券，加入力大 Line，給你最即時的服務！' : '歡迎加入力大 Line，給你最即時的服務！！！'
-  console.log('test comp:', test)
-  console.log('test location:', location)
   return (
     <div className={className}>
       <div className="intro">
