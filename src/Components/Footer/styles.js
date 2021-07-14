@@ -1,14 +1,35 @@
 import { css } from "styled-components";
+import { 
+  MEDIA_QUERY_TINY,
+  MEDIA_QUERY_SMALL,
+  MEDIA_QUERY_MEDIUM,
+  MEDIA_QUERY_BIG
+} from '../Constants/breakpoint';
 
 const styles = css`
   .wrapper-footer {
+    // 根據 media 去變換 footer
     position: sticky;
-    height: 20vh;
+    ${MEDIA_QUERY_BIG} {
+      height: 10vh;
+      font-size: 0.7vw;
+    }
+    ${MEDIA_QUERY_MEDIUM} {
+      height: 10vh;
+      font-size: 0.7vw;
+    }
+    ${MEDIA_QUERY_TINY} {
+      height: 18vh;
+      font-size: 0.3vw;
+    }
+    ${MEDIA_QUERY_SMALL} {
+      height: 16vh;
+      font-size: 0.5vw;
+    }
     bottom: 0;
     width: 100%;
     background-color: #212529;
     color: white;
-    font-size: 0.8vw;
   }
   .wrapper-contact-info {
     display: flex;
@@ -32,7 +53,6 @@ const styles = css`
     
   }
   #company {
-    font-size: 1.3vw;
     letter-spacing: 0.2vw;
   }
   .copywright {

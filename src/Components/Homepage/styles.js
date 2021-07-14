@@ -1,13 +1,38 @@
 import { css } from "styled-components";
 import home_bg_desktop from '../../assets/images/home_bg_desktop.jpeg';
+import { 
+  MEDIA_QUERY_TINY,
+  MEDIA_QUERY_SMALL,
+  MEDIA_QUERY_MEDIUM,
+  MEDIA_QUERY_BIG
+} from '../Constants/breakpoint';
 
 const styles = css`
   // 根據 Media 去換大小圖片
   .home-bg {
-    background-image: url(${home_bg_desktop});
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    ${MEDIA_QUERY_BIG} {
+      background-image: url(${home_bg_desktop});
+      height: 82vh;
+    }
+    ${MEDIA_QUERY_MEDIUM} {
+      background-image: url(${home_bg_desktop});
+      height: 82vh;
+      background-repeat: no-repeat;
+    }
+    ${MEDIA_QUERY_SMALL} {
+      background-image: url(${home_bg_desktop});
+      background-position: bottom;
+      height: 78vh;
+      background-repeat: no-repeat;
+    }
+    ${MEDIA_QUERY_TINY} {
+      background-image: url(${home_bg_desktop});
+      background-position: bottom;
+      width: 100vw;
+      height: 78vh;
+      background-repeat: no-repeat;
+    }
     opacity: 0.8;
   }
   .slogan {

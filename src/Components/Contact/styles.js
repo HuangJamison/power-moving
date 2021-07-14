@@ -28,10 +28,10 @@ const styles = css`
     display: block;
   }
   .add-line-btn {
-    max-width: 35vw;
-    min-height: 10vh;
-    font-size: 2vw;
-    line-height: 7vw;
+    width: 35vw;
+    height: 13vh;
+    font-size: 1.5vw;
+    line-height: 11vh;
     margin: 3vh auto;
     border-radius: 8px;
   }
