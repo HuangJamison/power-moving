@@ -3,9 +3,10 @@ import styled from "styled-components";
 import styles from "./styles";
 import { Button } from 'react-bootstrap';
 import line_qr from '../../assets/images/line_qr.png';
+import PropTypes from "prop-types";
 
 const Contact = ({ className, location, isExistForm }) => {
-  const lineWording = isExistForm == 1 ? '歡迎填寫以下問券，加入力大 Line，給你最即時的服務！' : '歡迎加入力大 Line，給你最即時的服務！！！'
+  const lineWording = isExistForm == '1' ? '歡迎填寫以下問券，加入力大 Line，給你最即時的服務！' : '歡迎加入力大 Line，給你最即時的服務！！！'
   return (
     <div className={className}>
       <div className="intro">
@@ -29,6 +30,12 @@ const Contact = ({ className, location, isExistForm }) => {
       </div>
     </div>
   );
+};
+
+Contact.propTypes = {
+  className: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  isExistForm: PropTypes.string.isRequired
 };
 
 export default styled(Contact)`

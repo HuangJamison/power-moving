@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import styles from "./styles";
-import fb from "../../assets/images/fb.png";
+import PropTypes from "prop-types";
 
 const Footer = ({ className }) => {
   return (
@@ -24,6 +24,10 @@ const Footer = ({ className }) => {
         </div>
     </div>
   );
+};
+
+Footer.propTypes = {
+  className: PropTypes.string.isRequired
 };
 
 export default styled(Footer)`

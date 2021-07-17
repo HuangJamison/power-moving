@@ -13,14 +13,12 @@ function App(props) {
       <div id="page-wrapper">
         <MovingNavbar location={props.location}/>
         <Switch>
-
           <Route exact path="/">
             <MovingHomepage/>
           </Route>
-          <Route exact path="/power-moving/contact-us">
-            <ContactUs location={props} isExistForm={0} />
+          <Route exact path="/contact-us">
+            <ContactUs location={props} isExistForm={'0'} />
           </Route>
-
         </Switch>
         <Footer />
       </div>

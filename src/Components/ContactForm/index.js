@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import styles from "./styles";
 import { Button, Form } from 'react-bootstrap';
+import PropTypes from "prop-types";
 
 const ContactForm = ({ className, location, isExistForm }) => {
   return (
@@ -29,11 +30,17 @@ const ContactForm = ({ className, location, isExistForm }) => {
           />
         </Form.Group>
         <Button variant="primary" type="submit">
-          點我加入力大搬家 Line !!!
+          點我加入力大搬家的 Line !!!
         </Button>
       </Form>
     </div>
   );
+};
+
+ContactForm.propTypes = {
+  className: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  isExistForm: PropTypes.string.isRequired
 };
 
 export default styled(ContactForm)`
