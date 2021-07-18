@@ -3,7 +3,7 @@ import styled from "styled-components";
 import styles from "./styles";
 import PropTypes from "prop-types";
 
-const Footer = ({ className }) => {
+const Footer = ({ className         }) => {
   return (
     <div className={className}>
         <div className="wrapper-footer">
