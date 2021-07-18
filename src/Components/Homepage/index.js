@@ -4,7 +4,6 @@ import styles from "./styles";
 import PropTypes from "prop-types";
 
 const Homepage = ({ className }) => {
-  console.log('classname:', className)
   return (
     <div className={className}>
         <div className="home-bg">

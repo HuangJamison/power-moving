@@ -6,7 +6,7 @@ import line_qr from '../../assets/images/line_qr.png';
 import PropTypes from "prop-types";
 
 const Contact = ({ className, location, isExistForm }) => {
-  const lineWording = isExistForm == '1' ? '歡迎填寫以下問券，加入力大 Line，給你最即時的服務！' : '歡迎加入力大 Line，給你最即時的服務！！！'
+  const lineWording=isExistForm == '1' ? '歡迎填寫以下問券，加入力大 Line，給你最即時的服務！':'歡迎加入力大 Line，給你最即時的服務！！！'
   return (
     <div className={className}>
       <div className="intro">
