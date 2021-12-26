@@ -1,5 +1,6 @@
 import { css } from "styled-components";
-import home_bg_desktop from '../../assets/images/home_bg_desktop.jpeg';
+import home_bg_desktop from '../../assets/images/moving_desktop.jpg';
+import home_bg_mobile from '../../assets/images/moving_mobile.jpg';
 import { 
   MEDIA_QUERY_TINY,
   MEDIA_QUERY_SMALL,
@@ -12,25 +13,28 @@ const styles = css`
   .home-bg {
     background-size: cover;
     ${MEDIA_QUERY_BIG} {
+      background-position: top;
       background-image: url(${home_bg_desktop});
       height: 82vh;
+      background-size: cover;
     }
     ${MEDIA_QUERY_MEDIUM} {
       background-image: url(${home_bg_desktop});
+      background-position: top;
       height: 82vh;
-      background-repeat: no-repeat;
+      background-size: cover;
     }
     ${MEDIA_QUERY_SMALL} {
-      background-image: url(${home_bg_desktop});
-      background-position: bottom;
-      height: 78vh;
+      background-image: url(${home_bg_mobile});
+      background-position: center;
+      height: 80vh;
       background-repeat: no-repeat;
     }
     ${MEDIA_QUERY_TINY} {
-      background-image: url(${home_bg_desktop});
-      background-position: bottom;
+      background-image: url(${home_bg_mobile});
+      background-position: center;
       width: 100vw;
-      height: 78vh;
+      height: 80vh;
       background-repeat: no-repeat;
     }
     opacity: 0.8;

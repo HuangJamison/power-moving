@@ -10,9 +10,9 @@ const Footer = ({ className }) => {
         <div className="wrapper-contact-info">
           <div className="contact-info">
             <span>
-              營業時間：週一〜週六 10:00~19:00/週日、國定假日（含連假）休息
+              搬家時間：全年無休，歡迎預約，來電時間：週一〜週日 08:00~23:00
             </span>
-            <span>電話： 09-32260184</span>
+            <span>電話： 09-3226-0184</span>
             <span>Email: b10130402@gmail.com</span>
           </div>
           <div className="social-media">

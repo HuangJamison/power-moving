@@ -11,20 +11,20 @@ const styles = css`
     // 根據 media 去變換 footer
     position: sticky;
     ${MEDIA_QUERY_BIG} {
-      height: 10vh;
+      height: 11vh;
       font-size: 0.7vw;
     }
     ${MEDIA_QUERY_MEDIUM} {
-      height: 10vh;
+      height: 11vh;
       font-size: 0.7vw;
     }
     ${MEDIA_QUERY_TINY} {
-      height: 18vh;
-      font-size: 0.3vw;
+      height: 16vh;
+      font-size: 2vw;
     }
     ${MEDIA_QUERY_SMALL} {
       height: 16vh;
-      font-size: 0.5vw;
+      font-size: 2vw;
     }
     bottom: 0;
     width: 100%;
