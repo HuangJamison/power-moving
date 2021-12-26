@@ -17,7 +17,7 @@ function App(props) {
             <MovingHomepage/>
           </Route>
           <Route exact path="/contact-us">
-            <ContactUs location={props} isExistForm={'0'} />
+            <ContactUs location={props} />
           </Route>
         </Switch>
         <Footer />
